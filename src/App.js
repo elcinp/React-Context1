@@ -1,9 +1,10 @@
-import './App.css';
+import data from "./data";
 
 function App() {
   return (
-    <div></div>
-    
+    <div>
+      <h1>Context Example</h1>
+    </div>
   );
 }
 
