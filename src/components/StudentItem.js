@@ -7,10 +7,10 @@ const StudentItem = ({student}) => {
     const {id,name,email,age,color,} =student
     return (
         <div style={{background:student.color}}>
-            <h3>{name}</h3>
-            <h4>{email}</h4>
-            <h4>{age}</h4>
-            color: <input type="text" value={color} onChange={()=> changeColor(color,id)}/>
+            <h3>Name: {name}</h3>
+            <h4>Email: {email}</h4>
+            <h4>Age: {age}</h4>
+            color: <input type="text" value={color} onChange={(e)=> changeColor(e.target.value,id)}/>
         </div>
     )
 }
